@@ -14,7 +14,7 @@
   align-items: center;
   padding: 1.75rem;
   min-height: 2vh;
-  min-width: 25vw;
+  width: 25vw;
   background-color: var(--box-color);
   border-radius: 9.6px;
   gap: 1.75rem;
@@ -31,8 +31,6 @@
 .img {
   display: inline-block;
   align-items: flex-start;
-  width: 300px;
-  height: 300px;
 }
 
 .title {
