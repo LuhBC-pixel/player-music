@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import { Rewind, Play, FastForward } from 'phosphor-react';
 
 export default function Home() {
   return (
@@ -14,21 +15,23 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.box}>
           <div className={styles.content}>
-            <div className={styles.divImg}>
-              <Image
-                src='/hans.png'
-                alt='logo de uma música'
-                width={84}
-                height={84}
-                className={styles.img}
-              />
-              <div className={styles.description}>
-                <span className={styles.title}>Acorda Devinho</span>
-                <p className={styles.subtitle}>Banda Rocketseat</p>
-              </div>
+            <Image
+              src='/hans.png'
+              alt='logo de uma música'
+              width={84}
+              height={84}
+              className={styles.img}
+            />
+            <div className={styles.description}>
+              <span className={styles.title}>Acorda Devinho</span>
+              <p className={styles.subtitle}>Banda Rocketseat</p>
             </div>
           </div>
-          <div></div>
+          <div className={styles.mainIcons}>
+            <Rewind size={28} weight='fill' color='#E1E1E6' />
+            <Play size={28} weight='fill' color='#E1E1E6' />
+            <FastForward size={28} weight='fill' color='#E1E1E6' />
+          </div>
         </div>
       </main>
     </>
