@@ -32,6 +32,13 @@ export default function Home() {
             <Play size={28} weight='fill' color='#E1E1E6' />
             <FastForward size={28} weight='fill' color='#E1E1E6' />
           </div>
+          <div className={styles.display}>
+            <img src='./barra.svg' alt='barra de música' />
+            <div className={styles.time}>
+              <p>03:20</p>
+              <p>0:12</p>
+            </div>
+          </div>
         </div>
       </main>
     </>
