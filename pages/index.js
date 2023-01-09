@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { Rewind, Play, FastForward } from 'phosphor-react';
 
@@ -15,11 +14,9 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.box}>
           <div className={styles.content}>
-            <Image
+            <img
               src='/hans.png'
               alt='logo de uma música'
-              width={84}
-              height={84}
               className={styles.img}
             />
             <div className={styles.description}>
